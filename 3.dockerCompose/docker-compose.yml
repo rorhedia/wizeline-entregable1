@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  web:
+    container_name: docker-test
+    build: .
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:3000"
+  redis:
+    container_name: redis
+    image: "redis:alpine"
