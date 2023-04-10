@@ -1,5 +1,5 @@
 # Cloudwatch
 ***
 
-### Logs
+### Revisión de logs
 ![cloudwatch](./cloudwatch.jpg "cloudwatch")
