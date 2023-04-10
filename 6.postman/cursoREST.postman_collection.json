@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "98a9126c-1b83-4ee9-afb0-ecb9daae294d",
+		"name": "curso",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4436072"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/78a43865ed174d90994c7cba95490934/unicorns",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"78a43865ed174d90994c7cba95490934",
+						"unicorns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Heredia\",\n    \"age\": 23,\n    \"colour\": \"blue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/78a43865ed174d90994c7cba95490934/unicorns",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"78a43865ed174d90994c7cba95490934",
+						"unicorns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Heredia\",\n    \"age\": 3,\n    \"colour\": \"blue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/78a43865ed174d90994c7cba95490934/unicorns/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"78a43865ed174d90994c7cba95490934",
+						"unicorns",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "64344afa308c9903e84edc3a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH - Método no permitido por api pública",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Heredia\",\n    \"age\": 32,\n    \"colour\": \"blue\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/78a43865ed174d90994c7cba95490934/unicorns/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"78a43865ed174d90994c7cba95490934",
+						"unicorns",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "64344afa308c9903e84edc3a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/78a43865ed174d90994c7cba95490934/unicorns/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"78a43865ed174d90994c7cba95490934",
+						"unicorns",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "64344afa308c9903e84edc3a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
