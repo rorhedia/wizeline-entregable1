@@ -1,21 +1,37 @@
+# Dockerfile
+***
 
-## Crear alias para imágenes
-docker build -t nombreImagen .
+## Crear imagen con alias
+~~~
+$ docker build -t nombreImagen .
+~~~
 
 ## Correr img docker
-docker run -p 2000:3000 nombreImagen
+~~~
+$ docker run -p 2000:3000 nombreImagen
+~~~
 
 ## Borrar contenedor
-docker rm nombreImagen
+~~~
+$ docker rm nombreImagen
+~~~
 
 ## Enumerar contenedor corriendo
-docker ps
+~~~
+$ docker ps
+~~~
 
 ## Iniciar contenedor
-docker start
+~~~
+$ docker start
+~~~
 
 ## Detener el proceso
-docker stop nombreImagen
+~~~
+$ docker stop nombreImagen
+~~~
 
 ## Detener e iniciar el contenedor
-docker restart nombreImagen
+~~~
+$ docker restart nombreImagen
+~~~
